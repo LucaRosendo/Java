@@ -36,7 +36,7 @@ public class Imc {
     double Fpeso = (62.1*altura) - 44.7;
 
     if (imc.sexo == 'M' || imc.sexo == 'm') {
-      if (imc.setimc < Mpeso){
+      if (imc.setimc < Mpeso){ // deixar o -58
         System.out.printf("\n%s, você está abaixo do peso. O seu peso ideal é: %.2f", imc.nome, Mpeso);
       }else{
         System.out.printf("\n%s, você está acima do peso. O seu peso ideal é: %.2f", imc.nome, Mpeso);
@@ -45,7 +45,7 @@ public class Imc {
     } else if (imc.sexo == 'F' || imc.sexo == 'f') {
       System.out.println(imc.setimc);
       System.out.println(Fpeso);
-      if (imc.setimc < Fpeso){
+      if (imc.setimc < Fpeso){ //deixar o -44.7
         System.out.printf("\n%s, você está abaixo do peso. O seu peso ideal é: %.2f", imc.nome, Mpeso);
       }else{
         System.out.printf("\n%s, você está acima do peso. O seu peso ideal é: %.2f", imc.nome, Mpeso);
